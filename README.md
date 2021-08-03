@@ -16,3 +16,8 @@ Siendo como una pagina externa , el formulario para el registro.
 a continuacion adjuntamos el link de la pagina 
 
 https://wireframe.cc/pro/pp/8f6e39b9a461582
+
+
+Link trello 
+https://trello.com/b/UEF35MTX/grupo14
+
