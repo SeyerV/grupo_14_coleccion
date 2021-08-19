@@ -1,3 +1,13 @@
+## Getting Started
+
+First, run the development server:
+
+```bash
+
+npm run dev
+
+```
+
 # grupo_14_coleccion
 
 El core del sitio web es un ecomerce de juguetes de coleccion, orientado principalmente al publico adolescente.
