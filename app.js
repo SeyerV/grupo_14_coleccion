@@ -1,11 +1,10 @@
-const express = requiere('express');
+// Requiere express
+const express = require('express');
 
+// Ejecuta express
 const app = express();
 
-app.get('/', (req, res)=>{
-    res.send('Hola Mundo');
-});
-
+// Levanta el servidor de express
 app.listen(3000, ()=>{
-    console.log('Servidor Corriendo');
+    console.log('Server Running at port 3000');
 });
