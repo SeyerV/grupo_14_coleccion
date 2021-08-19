@@ -34,6 +34,9 @@ app.get('/productDetail', (req, res)=>{
     res.sendFile(path.resolve('./views/productDetail.html'));
 });
 
+app.get('*', (req, res)=>{
+    res.status(404).send('<h1>404 Not Found</h1>');
+});
 
 
 // Levanta el servidor de express
