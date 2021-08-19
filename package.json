@@ -1,0 +1,22 @@
+{
+  "name": "friki-shop",
+  "version": "1.0.0",
+  "description": "Proyecto Integrador grupo 14",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeyerV/grupo_14_coleccion.git"
+  },
+  "author": "Victor Arevalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeyerV/grupo_14_coleccion/issues"
+  },
+  "homepage": "https://github.com/SeyerV/grupo_14_coleccion#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
