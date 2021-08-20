@@ -5,29 +5,76 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/style.css">
   <title>Friki-Shop</title>
 </head>
 
 <body>
-  <nav Class="navbar">
+  <nav Class="navbar navbar-light bg-light">
     <div>
-      <img src="" alt="Logo">
-      <a href="./">Home</a>
-      <a href="./">Contacto</a>
+      <img src="/public/img/logo.jpg" alt="Logo">
+      <a class="navbar-brand" href="./">Home</a>
+      <a class="navbar-brand" href="./">Contacto</a>
     </div>
     <div>
-      <img src="" alt="Cart">
-      <a href="./login">Login</a>
-      <a href="./register">Register</a>
+      <img src="/public/assets/cart.svg" alt="Cart">
+      <a class="btn btn-outline-secondary" href="./login">Login</a>
+      <a class="btn btn-outline-primary" href="./register">Register</a>
     </div>
   </nav>
-  <main>
 
+  <main>
+    <section class="filter">
+      <form action="">
+        <label for="filter">Filtro</label>
+        <input type="text">
+      </form>
+    </section>
+
+    <section class="container section">
+      <div class="row">
+        <div class="card col-4">
+          <img class="img-principal"
+            src="/public/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del Producto</h5>
+            <p class="card-text">Descripcion del Producto <br>
+              Lorem ipsum dolor sit.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Add Cart</a>
+          </div>
+        </div>
+        <div class="card col-4">
+          <img src="/public/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del Producto</h5>
+            <p class="card-text">Descripcion del Producto <br>
+              Lorem ipsum dolor sit.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Add Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-
-  <h1>Hola Mundo</h1>
-  <p>Este es el inicio de la pagina web</p>
+  <footer>
+    <nav class="navbar">
+      <ul>
+        <a href="/">Home</a>
+        <a href="/">Contacto</a>
+      </ul>
+      <div>
+        <a href=""><img src="" alt="facebook"></a>
+        <a href=""><img src="" alt="twiter"></a>
+        <a href=""><img src="" alt="instagram"></a>
+      </div>
+    </nav>
+  </footer>
 
 </body>
 
