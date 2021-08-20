@@ -24,9 +24,7 @@ https://shop.bandaicollectors.com.mx/
 # Wireframe
 Como wireframe tenemos el siguiente boceto, la idea es mostrar en el home los productos, una pagina para ver el detalle del producto e incluir el carrito de compras, ademas va a tener un login de usuario y formulario de registro. 
 
-A continuacion adjuntamos el link de figma donde se encuentran los wireframe y mockups.
-
-https://wireframe.cc/pro/pp/8f6e39b9a461582
+En la raiz del proyecto encontrara un pdf con los wireframe y la paleta de colores.
 
 
 # Tablero de Trabajo (Trello)
