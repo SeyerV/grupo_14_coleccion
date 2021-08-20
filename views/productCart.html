@@ -14,82 +14,97 @@
 <body>
   <nav Class="navbar navbar-light bg-light">
     <div>
-      <img src="/public/img/logo.jpg" alt="Logo">
+      <img class="icon" src="/public/img/logo.jpg" alt="Logo">
       <a class="navbar-brand" href="./">Home</a>
       <a class="navbar-brand" href="./">Contacto</a>
     </div>
     <div>
-      <img src="/public/assets/cart.svg" alt="Cart">
+      <a href="/productCart"><img class="me-4" src="/public/assets/cart.svg" alt="Cart"></a>
       <a class="btn btn-outline-secondary" href="./login">Login</a>
       <a class="btn btn-outline-primary" href="./register">Register</a>
     </div>
   </nav>
 
-  <main>
-    <div>
-      <div class="card">
-        <img src="" alt="producto">
-        <div>
-          <p>Nombre del producto</p>
-          <p>Descripcion</p>
+  <main class="container mt-5">
+    <div class="row">
+      <div class="col-8">
+        <div class=" cart-item">
+          <img class="icon-item"
+            src="/public/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png" alt="producto">
+          <div>
+            <p>Nombre del producto</p>
+            <p>Descripcion</p>
+          </div>
+          <button class="btn btn-outline-primary button-item">Delete</button>
         </div>
-        <button class="btn btn-outline-primary">Add Cart</button>
+        <div class=" cart-item">
+          <img class="icon-item" src="/public/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" alt="producto">
+          <div>
+            <p>Nombre del producto</p>
+            <p>Descripcion</p>
+          </div>
+          <button class="btn btn-outline-primary button-item">Delete</button>
+        </div>
+        <div class=" cart-item">
+          <img class="icon-item" src="/public/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" alt="producto">
+          <div>
+            <p>Nombre del producto</p>
+            <p>Descripcion</p>
+          </div>
+          <button class="btn btn-outline-primary button-item">Delete</button>
+        </div>
+        <div class=" cart-item">
+          <img class="icon-item" src="/public/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" alt="producto">
+          <div>
+            <p>Nombre del producto</p>
+            <p>Descripcion</p>
+          </div>
+          <button class="btn btn-outline-primary button-item">Delete</button>
+        </div>
       </div>
-      <div class="card">
-        <img src="" alt="producto">
-        <div>
-          <p>Nombre del producto</p>
-          <p>Descripcion</p>
+      <div class="col-4">
+        <div class="card-pay">
+          <h3>Metodo de Pago</h3>
+          <div>
+            <img class="icon" src="/public/assets/paypal.svg" alt="paypal">
+            <img class="icon" src="/public/assets/credit_card.svg" alt="card">
+            <img class="icon" src="/public/assets/cash.svg" alt="cash">
+          </div>
+          <h3>Metodo de Envio</h3>
+          <div>
+            <img class="icon me-4" src="/public/assets/delivery.svg" alt="Envio">
+            <img class="icon" src="/public/assets/shop.svg" alt="Recoger">
+          </div>
+          <div class="wallet">
+            <div class="mt-4">
+              <p class="d-block">Subtotal</p>
+              <p class="d-block">Envio</p>
+              <p class="d-block">IVA</p>
+              <p class="d-block">Total</p>
+            </div>
+            <div class="mt-4 ms-5">
+              <p class="d-block">$$$</p>
+              <p class="d-block">$$$</p>
+              <p class="d-block">$$$</p>
+              <p class="d-block">$$$</p>
+            </div>
+          </div>
+          <button class="btn btn-outline-primary mb-4">Finalizar Compra</button>
         </div>
-        <button class="btn btn-outline-primary">Add Cart</button>
-      </div>
-      <div class="card">
-        <img src="" alt="producto">
-        <div>
-          <p>Nombre del producto</p>
-          <p>Descripcion</p>
-        </div>
-        <button class="btn btn-outline-primary">Add Cart</button>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <h3>Metodo de Pago</h3>
-        <div>
-          <img src="" alt="paypal">
-          <img src="" alt="card">
-          <img src="" alt="cash">
-        </div>
-        <h3>Metodo de Envio</h3>
-        <div>
-          <img src="" alt="Envio">
-          <img src="" alt="Recoger">
-        </div>
-        <div>
-          <p>Subtotal</p>
-          <p>$$$</p>
-          <p>Envio</p>
-          <p>$$$</p>
-          <p>IVA</p>
-          <p>$$$</p>
-          <p>Total</p>
-          <p>$$$</p>
-        </div>
-        <button class="btn btn-outline-primary">Finalizar Compra</button>
       </div>
     </div>
   </main>
 
-  <footer>
-    <nav class="navbar">
+  <footer class="footer container-fluid">
+    <nav class="navbar navbar-light bg-light">
       <ul>
-        <a href="/">Home</a>
-        <a href="/">Contacto</a>
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/">Contacto</a>
       </ul>
       <div>
-        <a href=""><img src="" alt="facebook"></a>
-        <a href=""><img src="" alt="twiter"></a>
-        <a href=""><img src="" alt="instagram"></a>
+        <a class="ms-2 me-2" href=""><img class="icon" src="/public/assets/twitter.svg" alt="twiter"></a>
+        <a class="ms-2 me-2" href=""><img class="icon" src="/public/assets/Facebook.svg" alt="facebook"></a>
+        <a class="ms-2 me-2" href=""><img class="icon" src="/public/assets/instagram.svg" alt="instagram"></a>
       </div>
     </nav>
   </footer>

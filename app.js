@@ -9,7 +9,7 @@ const path = require('path');
 const app = express();
 
 // Usando Recursos Estaticos
-app.use(express.static('public'));
+app.use('/public', express.static('public'));
 
 
 

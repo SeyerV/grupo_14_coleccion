@@ -14,64 +14,61 @@
 <body>
   <nav Class="navbar navbar-light bg-light">
     <div>
-      <img src="/public/img/logo.jpg" alt="Logo">
+      <img class="icon" src="/public/img/logo.jpg" alt="Logo">
       <a class="navbar-brand" href="./">Home</a>
       <a class="navbar-brand" href="./">Contacto</a>
     </div>
     <div>
-      <img src="/public/assets/cart.svg" alt="Cart">
+      <a href="/productCart"><img class="me-4" src="/public/assets/cart.svg" alt="Cart"></a>
       <a class="btn btn-outline-secondary" href="./login">Login</a>
       <a class="btn btn-outline-primary" href="./register">Register</a>
     </div>
   </nav>
 
+
   <main>
     <section class="filter">
       <form action="">
-        <label for="filter">Filtro</label>
+        <label for="filter">Buscar</label>
         <input type="text">
       </form>
     </section>
 
-    <section class="container section">
-      <div class="row">
-        <div class="card col-4">
-          <img class="img-principal"
-            src="/public/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del Producto</h5>
-            <p class="card-text">Descripcion del Producto <br>
-              Lorem ipsum dolor sit.
-            </p>
-            <a href="#" class="btn btn-outline-primary">Add Cart</a>
-          </div>
+    <section class=" section">
+      <div class="card product-card">
+        <img src="/public/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png" class="icon"
+          alt="...">
+        <div class="card-body">
+          <a href="/productDetail" class="card-title">Nombre del Producto</a>
+          <p class="card-text">Descripcion del Producto <br>
+            Lorem ipsum dolor sit.
+          </p>
+          <a href="#" class="btn btn-outline-primary">Add Cart</a>
         </div>
-        <div class="card col-4">
-          <img src="/public/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Nombre del Producto</h5>
-            <p class="card-text">Descripcion del Producto <br>
-              Lorem ipsum dolor sit.
-            </p>
-            <a href="#" class="btn btn-outline-primary">Add Cart</a>
-          </div>
+      </div>
+      <div class="card product-card">
+        <img src="/public/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" class="icon" alt="...">
+        <div class="card-body">
+          <a href="/productDetail" class="card-title">Nombre del Producto</a>
+          <p class="card-text">Descripcion del Producto <br>
+            Lorem ipsum dolor sit.
+          </p>
+          <a href="#" class="btn btn-outline-primary">Add Cart</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <nav class="navbar">
+  <footer class="footer container-fluid">
+    <nav class="navbar navbar-light bg-light">
       <ul>
-        <a href="/">Home</a>
-        <a href="/">Contacto</a>
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/">Contacto</a>
       </ul>
       <div>
-        <a href=""><img src="" alt="facebook"></a>
-        <a href=""><img src="" alt="twiter"></a>
-        <a href=""><img src="" alt="instagram"></a>
+        <a class="ms-2 me-2" href=""><img class="icon" src="/public/assets/twitter.svg" alt="twiter"></a>
+        <a class="ms-2 me-2" href=""><img class="icon" src="/public/assets/Facebook.svg" alt="facebook"></a>
+        <a class="ms-2 me-2" href=""><img class="icon" src="/public/assets/instagram.svg" alt="instagram"></a>
       </div>
     </nav>
   </footer>
