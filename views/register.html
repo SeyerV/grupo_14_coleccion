@@ -5,13 +5,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <title>Registro</title>
 </head>
 
 <body>
+  <nav Class="navbar navbar-light bg-light">
+    <div>
+      <img src="/public/img/logo.jpg" alt="Logo">
+      <a class="navbar-brand" href="./">Home</a>
+      <a class="navbar-brand" href="./">Contacto</a>
+    </div>
+    <div>
+      <img src="/public/assets/cart.svg" alt="Cart">
+    </div>
+  </nav>
 
-  <h1>Soy el Register</h1>
+  <main>
+    <section class="container">
+      <div class="row">
+        <div class="card">
+          <img src="/public/img/logo.jpg" class="card-img-top" alt="Logo">
+          <div class="card-body">
+            <form class="form-group" action="">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" placeholder="Nombre">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="Email">
+              <label for="pass"></label>
+              <input type="password" name="pass" id="pass" placeholder="Constrasena">
+              <button class="btn btn-outline-danger">Cancel</button>
+              <button class="btn btn-outline-primary">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <nav class="navbar">
+      <ul>
+        <a href="/">Home</a>
+        <a href="/">Contacto</a>
+      </ul>
+      <div>
+        <a href=""><img src="" alt="facebook"></a>
+        <a href=""><img src="" alt="twiter"></a>
+        <a href=""><img src="" alt="instagram"></a>
+      </div>
+    </nav>
+  </footer>
 
 </body>
 
