@@ -12,10 +12,22 @@
   flex-direction: column;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px;
+  box-shadow: 4px 3px 2px;
   width: 40%;
-  height: 60%;
+  height: 65%;
 }
+
+.boxx{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 3px 2px;
+  width: 30%;
+  height: 45%;
+}
+
 
 .icon{
   width: 30px;

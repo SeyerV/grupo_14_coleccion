@@ -18,7 +18,6 @@ app.get('/', (req, res)=>{
     res.render('index')
 });
 
-
 app.get('/login', (req, res)=>{
     res.render('login')
 });
@@ -35,9 +34,14 @@ app.get('/productDetail', (req, res)=>{
     res.render('productDetail')
 });
 
+app.get('/productCrud', (req, res)=>{
+    res.render('productCrud')
+});
+
 app.get('*', (req, res)=>{
     res.status(404).send('<h1>404 Not Found</h1>');
 });
+
 
 
 // View engine setup
