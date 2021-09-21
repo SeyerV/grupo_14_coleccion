@@ -38,3 +38,9 @@ Implementación de estructura MVC (Modelo-Vista-Controlador) para un proyecto de
 ○ Carrito de compras (productCart.html)
 ○ Formulario de registro (register.html)
 ○ Formulario de login (login.html)
+
+# 4. Implementar el motor de templates
+    Sitio actualizado con todas las vistas y rutas implementando EJS.
+    Vistas separadas en carpetas
+    Crear, dentro de la carpeta views, la carpeta products y la carpeta users.
+    Componentes repetidos separados en archivos parciales
