@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <%- include('partials/head') %>
+<%- include('partials/head') %>
 
-<body>
-  <nav Class="navbar navbar-light bg-light">
-    <div>
-      <img class="icon" src="/img/logo.jpg" alt="Logo">
-      <a class="navbar-brand" href="./">Home</a>
-      <a class="navbar-brand" href="./">Contacto</a>
-      <a class="navbar-brand" href="./productCrud">Producto</a>
-    </div>
-    <div>
-      <a href="/productCart"><img class="me-4" src="/assets/cart.svg" alt="Cart"></a>
-      <a class="btn btn-outline-secondary" href="./login">Login</a>
-      <a class="btn btn-outline-primary" href="./register">Register</a>
-    </div>
-  </nav>
+  <body>
+    <%- include('partials/navbar') %>
 
+      <main>
+        <section class="filter">
+          <form action="">
+            <label for="filter">Buscar</label>
+            <input type="text">
+          </form>
+        </section>
 
-  <main>
-    <section class="filter">
-      <form action="">
-        <label for="filter">Buscar</label>
-        <input type="text">
-      </form>
-    </section>
+        <section class=" section">
+          <div class="card product-card">
+            <img src="/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png" class="icon"
+              alt="...">
+            <div class="card-body">
+              <a href="/productDetail" class="card-title">Nombre del Producto</a>
+              <p class="card-text">Descripcion del Producto <br>
+                Lorem ipsum dolor sit.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Add Cart</a>
+            </div>
+          </div>
+          <div class="card product-card">
+            <img src="/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" class="icon" alt="...">
+            <div class="card-body">
+              <a href="/productDetail" class="card-title">Nombre del Producto</a>
+              <p class="card-text">Descripcion del Producto <br>
+                Lorem ipsum dolor sit.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Add Cart</a>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <section class=" section">
-      <div class="card product-card">
-        <img src="/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png" class="icon"
-          alt="...">
-        <div class="card-body">
-          <a href="/productDetail" class="card-title">Nombre del Producto</a>
-          <p class="card-text">Descripcion del Producto <br>
-            Lorem ipsum dolor sit.
-          </p>
-          <a href="#" class="btn btn-outline-primary">Add Cart</a>
-        </div>
-      </div>
-      <div class="card product-card">
-        <img src="/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" class="icon" alt="...">
-        <div class="card-body">
-          <a href="/productDetail" class="card-title">Nombre del Producto</a>
-          <p class="card-text">Descripcion del Producto <br>
-            Lorem ipsum dolor sit.
-          </p>
-          <a href="#" class="btn btn-outline-primary">Add Cart</a>
-        </div>
-      </div>
-    </section>
-  </main>
+      <%- include('partials/footer') %>
 
-  <%- include('partials/footer') %>
-
-</body>
+  </body>
 
 </html>

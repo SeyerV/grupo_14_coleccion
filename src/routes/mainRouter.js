@@ -9,8 +9,4 @@ router.get('/search', mainController.search);
 
 router.get('/', mainController.index); 
 
-router.get('*', (req, res)=>{
-    res.status(404).render('<h1>404 Not Found</h1>');
-});
-
 module.exports = router;

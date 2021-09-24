@@ -19,16 +19,18 @@ app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el 
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs');
-app.set('views/', path.join(__dirname, './src/views')); // Define la ubicación de la carpeta de las Vistas
+app.set('views', path.join(__dirname, './src/views')); // Define la ubicación de la carpeta de las Vistas
 
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const mainRouter = require('./src/routes/mainRouter'); // Rutas main
 const productsRouter = require('./src/routes/productsRouter'); // Rutas /products
+const usersRouter = require('./src/routes/usersRouter'); // Rutas Users
 
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
+app.use('/user', usersRouter);
 
 
 // ************ DON'T TOUCH FROM HERE ************
@@ -44,7 +46,7 @@ app.use((err, req, res, next) => {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', {err: err.message});
 });
 
 // ************ exports app - dont'touch ************

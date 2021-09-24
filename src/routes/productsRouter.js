@@ -4,12 +4,6 @@ const router = express.Router();
 // Controller Requerido
 const productsController = require('../controllers/productsController');
 
-// middleware that is specific to this router
-router.use(function timeLog(req, res, next) {
-    console.log('Time: ', Date.now());
-    next();
-  });
-
 // Obtener todos los productos
 router.get("/", productsController.products); 
 
