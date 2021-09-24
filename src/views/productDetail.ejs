@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<%- include('partials/head') %>
+
+  <body>
+    <%- include('partials/navbar') %>
+
+      <main>
+
+
+        <section class="container section mt-5">
+          <div class="row">
+            <div class="col-5">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/54264PKG_DC-ImperialPalace_MartianManhunter_POP_MT_GLAM-1-WEB_920x920.png"
+                      class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-6 ms-4">
+              <div class="barra">
+                <p>Detalle del Producto</p>
+              </div>
+              <div>
+                <p>Lorem ipsum.</p>
+              </div>
+              <div class="barra">
+                <p>Descripcion</p>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, porro.</p>
+              </div>
+              <div class="barra">
+                <p>Datos Tecnicos</p>
+              </div>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, veniam?</p>
+              </div>
+              <div class="barra">
+                <p>Precio</p>
+              </div>
+              <div>
+                <p>$$$$$</p>
+              </div>
+              <button class="btn btn-outline-primary">Add Cart</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <%- include('partials/footer') %>
+
+  </body>
+
+</html>
