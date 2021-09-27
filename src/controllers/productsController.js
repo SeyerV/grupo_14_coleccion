@@ -6,12 +6,12 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf8'));
 
 const productsController = {
     products: (req, res)=>{
-        res.render('products')
+        res.render('products', { products })
     },
     detail: (req, res)=>{
         let id = req.params.id;
-        let product = products.find(product => product.id === id)
-        res.render('detail', { product })
+        let product = products.find(product => product.id == id)
+        res.render('productDetail', { product })
     },
     create: (req, res)=>{
         res.render('productCrud');
@@ -28,12 +28,12 @@ const productsController = {
     },
     edit: (req, res)=>{
         let id = req.params.id;
-        let productToEdit = products.find(product => product.id === id);
-        res.render('productCrud', {productToEdit});
+        let productToEdit = products.find(product => product.id == id);
+        res.render('productCrud', { productToEdit });
     },
     update: (req, res)=>{
         let id = req.params.id;
-        let productToEdit = products.find(product => product.id === id);
+        let productToEdit = products.find(product => product.id == id);
 
         productToEdit = {
             id: productToEdit.id,
@@ -42,13 +42,16 @@ const productsController = {
         };
 
         let newProducts = products.map(product=>{
-            if(product.id === productToEdit.id){
+            if(product.id == productToEdit.id){
                 return product = {...productToEdit}
             }
             return product;
         });
         fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
         res.redirect('/');
+    },
+    cart: (req, res)=>{
+        res.render('productCart')
     },
     destroy: (req, res)=>{
         let id = req.params.id;
