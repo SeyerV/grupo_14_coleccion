@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 4px 3px 2px;
@@ -40,8 +41,8 @@
 }
 
 .footer{
-  position: absolute;
-  top: 100%;
+  /* position: absolute;
+  top: 100%; */
 }
 
 .section{
@@ -74,13 +75,13 @@
 
 .cart-item{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   border: 1px solid black;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .cart-item .icon-item{
@@ -91,6 +92,7 @@
 .cart-item .button-item{
   width: 90px;
   height: 40px;
+  margin:10px;
 }
 
 .card-pay{
@@ -123,3 +125,5 @@
   color: white;
   text-align: center;
 }
+
+@import url("../../node_modules/@fortawesome/fontawesome-free/css/all.css");

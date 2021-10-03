@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 
 <%- include('partials/head') %>
@@ -12,18 +12,25 @@
       <main class="container mt-5">
         <div class="row">
 
+          <% products.forEach(function(product){ %>
+            <div class="cart-item col-3">
+              <img width="200px" height="200px" alt="imagen de producto" src=<%=`${product.photo}` %> >
+              <div>
+                <a href="/products/detail/<%= `${product.id}/` %>">
+                  <p>
+                    <%= product.name %>
+                  </p>
+                </a>
+                <p>
+                  <%= product.price %>
+                </p>
+              </div>
+              <button class="btn btn-outline-primary button-item">
+                Comprar
+              </button>
 
-          <div class=" cart-item col-4">
-            <img class="icon-item" src="/img/PP907_GODEATER_ARTFXJSOMASCHICKSAL_14_667x1000.jpeg" alt="producto">
-            <div>
-              <p>Nombre del producto</p>
-              <p>Descripcion</p>
             </div>
-            <button class="btn btn-outline-primary button-item">
-              Delete
-            </button>
-          </div>
-
+            <% }) %>
 
         </div>
       </main>

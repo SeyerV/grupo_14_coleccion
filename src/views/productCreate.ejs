@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('partials/head') %>
+
+  <body>
+    <%- include('partials/navbar') %>
+
+      <main class="content">
+        <section class="box">
+
+          <form action="/products/" method="POST">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Nombre del producto">
+              <label for="name">Nombre del producto</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="description" name="description" placeholder="Descripción">
+              <label for="description">Descripción</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="photo" name="photo" placeholder="Url de la imagen">
+              <label for="photo">Url de la imagen</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="price" name="price" placeholder="Precio">
+              <label for="price">Precio</label>
+            </div>
+            <div class="mt-3 mb-3 d-flex justify-content-around">
+              <button type="submit" class="btn btn-outline-success">Crear</button>
+            </div>
+          </form>
+
+        </section>
+      </main>
+
+      <%- include('partials/footer') %>
+
+  </body>
+
+</html>

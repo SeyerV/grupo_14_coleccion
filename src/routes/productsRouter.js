@@ -14,14 +14,14 @@ router.get("/create", productsController.create);
 router.post("/", productsController.store);
 
 // Obtener un producto
-router.get("/:id", productsController.detail);
+router.get("/detail/:id", productsController.detail);
 
 // Editar un producto
-router.get("/:id/edit", productsController.edit);
-router.patch("/:id", productsController.update);
+router.get("/edit/:id", productsController.edit);
+router.patch("/edit/:id", productsController.update);
 
 // Eliminar un producto 
-router.get("/delete/:id", productsController.destroy);
+router.delete("/delete/:id", productsController.destroy);
 
 
 module.exports = router;

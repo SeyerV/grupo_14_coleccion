@@ -11,6 +11,7 @@ const app = express();
 
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, './public')));  // Necesario para los archivos estáticos en el folder /public
+app.use(express.static(path.join(__dirname, './node_modules/@fortawesome/fontawesome-free/')));
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(express.json());

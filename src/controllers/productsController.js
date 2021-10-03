@@ -14,22 +14,21 @@ const productsController = {
         res.render('productDetail', { product })
     },
     create: (req, res)=>{
-        res.render('productCrud');
+        res.render('productCreate');
     },
     store: (req, res)=>{
         let newProduct = {
-            ...req.body,
-            image: 'default-image.png',
-            id: products[products.length - 1].id + 1
+            id: products[products.length - 1].id + 1,
+            ...req.body
         }
         products.push(newProduct);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-        res.redirect('/');
+        res.redirect('/products');
     },
     edit: (req, res)=>{
         let id = req.params.id;
         let productToEdit = products.find(product => product.id == id);
-        res.render('productCrud', { productToEdit });
+        res.render('productEdit', { productToEdit });
     },
     update: (req, res)=>{
         let id = req.params.id;
@@ -38,7 +37,6 @@ const productsController = {
         productToEdit = {
             id: productToEdit.id,
             ...req.body,
-            image: productToEdit.image,
         };
 
         let newProducts = products.map(product=>{
@@ -48,7 +46,7 @@ const productsController = {
             return product;
         });
         fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-        res.redirect('/');
+        res.redirect('/products');
     },
     cart: (req, res)=>{
         res.render('productCart')
@@ -57,7 +55,7 @@ const productsController = {
         let id = req.params.id;
         let finalProducts = products.filter(product => product.id != id);
         fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
-        res.redirect('/');
+        res.redirect('/products');
     }
 }
 
