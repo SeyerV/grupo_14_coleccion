@@ -13,6 +13,7 @@ Retroalimentacion
 1.Comenzar a hacer.
 
 Como equipo necesitamos comenzar a mejorar la comunicacion y retroalimentacion del proyecto.
+Reuniones para asi brindarnos apoyo a la realizacion de cada sprint del proyecto integrador.
 
 2.Hacer más.
 
